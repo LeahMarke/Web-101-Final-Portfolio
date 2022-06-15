@@ -1,7 +1,19 @@
 :root {
+  --cadet-blue: Hex: #A4B6BF;
+  --bone: #E2D4C7;
+  --tumbleweed: #E8AF92;
+  --artichoke: #8B977C;
+  --nickel: #737373;
+  --toupe: #a69f88;
+  --light-grey: #DFD9CC;
+  --cream: #F9F9F0;
+  --sand: #eadac3;
+  --steel: #c4c2bd;
+  --peach: #cca993;
+  --brown: #998677;
 }
 h1 {
-  color: var(--wintergreen-dream);
+  color: var(--tumbleweed);
   padding: 10px;
   font-size: 40px;
 }
@@ -12,7 +24,7 @@ header {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--azure-x-11-web-color);
+  background-color: var(--artichoke);
 }
 
 li {
@@ -27,12 +39,12 @@ li {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: var(--charcoal);
+  background-color: var(--nickel);
 }
 .hamburger {
   display: block;
   margin-bottom: 20px;
-  background-color: var(--light-cyan);
+  background-color: var(--bone);
   padding: 4px;
 }
 .hamburger.active .bar:nth-child(2) {
@@ -53,7 +65,7 @@ li {
   align-items: center;
 }
 .nav-link {
-  color: var(--azure-x-11-web-color);
+  color: var(--cadet-blue);
   text-decoration: none;
   padding: 5px;
   font-size: 18px;
@@ -64,14 +76,14 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--charcoal);
+  background-color: var(--nickel);
   margin-top: 40px;
   padding: 20px 0;
   gap: 8px;
 }
 .all-rights-reserved {
   font-size: 16px;
-  color: var(--azure-x-11-web-color);
+  color: var(--cadet-blue);
 }
 /* START Style for "font awesome" social media icons */
 .fa {
@@ -80,7 +92,7 @@ footer {
   width: 45px;
   text-align: center;
   text-decoration: none;
-  border: 3px solid var(--wintergreen-dream);
+  border: 3px solid var(--tumbleweed);
 }
 
 .fa:hover {
@@ -129,8 +141,8 @@ footer {
     transition: 0.3s;
   }
   .nav-item {
-    background-color: var(--wintergreen-dream);
-    border: 1px solid var(--azure-x-11-web-color);
+    background-color: var(--tumbleweed);
+    border: 1px solid var(--bone);
     width: 100%;
     padding: 0.8em;
   }
@@ -142,7 +154,7 @@ footer {
     z-index: 1;
   }
   .active-link {
-    background: var(--charcoal);
+    background: var(--nickel);
   }
   main {
     z-index: -1;
@@ -181,18 +193,18 @@ footer {
 
   .nav-link {
     /* color: var(--wintergreen-dream); */
-    color: var(--bright-green);
+    color: var(--bone);
     text-decoration: none;
   }
   .nav-link:link {
-    color: var(--wintergreen-dream);
-    color: var(--bright-green);
+    color: var(--cadet-blue);
+    color: var(--bone);
   }
   .nav-link:hover {
     font-weight: bolder;
   }
   .nav-link:active {
-    background-color: var(--charcoal);
+    background-color: var(--nickel);
   }
   .nav-menu {
     display: flex;
@@ -203,7 +215,7 @@ footer {
   }
   .active-link {
     font-weight: bolder;
-    background-color: var(--charcoal);
+    background-color: var(--nickel);
   }
   @media (min-width: 992px) {
     .nav-link {
