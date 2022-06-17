@@ -12,27 +12,48 @@
   --peach: #cca993;
   --brown: #998677;
 }
+body {
+  width: 100vw;
+  font-family: "Advent Pro", sans-serif;
+  font-family: "Blaka Hollow", cursive;
+  font-family: "Inconsolata", monospace;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Radio Canada", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+  background-image: url(./images/pinkCactus.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-container {
+  margin: 0 auto;
+  width: 90%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 35px;
+}
 h1 {
-  color: var(--tumbleweed);
-  padding: 10px;
   font-size: 40px;
 }
 
-header {
-  min-height: 15%;
+/* .navbar {
+ min-height: 15%; 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  background-color: var(--artichoke);
-}
+  align-items: flex-start;
+} */
 
 li {
   list-style: none;
 }
 
 /*start hamburger menu  */
-.bar {
+/* .bar {
   display: block;
   width: 40px;
   height: 3px;
@@ -44,7 +65,6 @@ li {
 .hamburger {
   display: block;
   margin-bottom: 20px;
-  background-color: var(--bone);
   padding: 4px;
 }
 .hamburger.active .bar:nth-child(2) {
@@ -55,14 +75,14 @@ li {
 }
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-}
+} */
 /*end hamburger menu  */
 /*start navbar menu  */
-.navbar {
+.nav-menu {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 .nav-link {
   color: var(--cadet-blue);
@@ -72,18 +92,27 @@ li {
 }
 /*start footer styling*/
 footer {
-  height: 12%;
+
+  height: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--nickel);
-  margin-top: 40px;
+  background-color: rgba(134, 132, 132, 0.712);
+  color: pink;
+  /* margin-top: 40px; */
   padding: 20px 0;
   gap: 8px;
+  position:fixed;
+  bottom:0;
+  width:90%;
+  margin: 20px auto;
+  
 }
+
 .all-rights-reserved {
   font-size: 16px;
   color: var(--cadet-blue);
+  
 }
 /* START Style for "font awesome" social media icons */
 .fa {
@@ -92,7 +121,6 @@ footer {
   width: 45px;
   text-align: center;
   text-decoration: none;
-  border: 3px solid var(--tumbleweed);
 }
 
 .fa:hover {
@@ -100,26 +128,26 @@ footer {
 }
 
 .fa-twitter {
-  background: #55acee;
+  background: #55acee82;
   color: white;
 }
 
 .fa-facebook {
-  background: #3b5998;
+  background: #3b58987d;
   color: white;
 }
 
 .fa-google {
-  background: #dc4e41;
+  background: #dc4e417b;
   color: white;
 }
 
 .fa-pinterest {
-  background: #bd081c;
+  background: #bd081d7f;
   color: white;
 }
 .fa-instagram {
-  background: #3f729b;
+  background: #3f729b7d;
   color: white;
 }
 .social_media_links {
@@ -127,7 +155,7 @@ footer {
   gap: 5px;
 }
 /*end social media icons*/
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
   .nav-menu {
     position: absolute;
     top: 35%;
@@ -159,31 +187,22 @@ footer {
   main {
     z-index: -1;
   }
-}
+} */
 /*start media query for tablet*/
 
 @media (min-width: 576px) {
-  body {
+  /* body {
     height: 100vh;
-  }
-  .scissors-logo {
-    width: 300px;
-    height: 150px;
-    margin-top: 15px;
-  }
-  .main_paragraph_pic {
-    width: 100%;
-    height: auto;
-  }
+  } */
   h1 {
     padding: 20px;
     font-size: 50px;
   }
 
-  .hamburger {
+  /* .hamburger {
     display: none;
     cursor: pointer;
-  }
+  } */
 
   .navbar {
     min-height: 70px;
@@ -217,8 +236,9 @@ footer {
     font-weight: bolder;
     background-color: var(--nickel);
   }
-  @media (min-width: 992px) {
-    .nav-link {
-      font-size: 22px;
-    }
+}
+@media (min-width: 992px) {
+  .nav-link {
+    font-size: 22px;
   }
+}
