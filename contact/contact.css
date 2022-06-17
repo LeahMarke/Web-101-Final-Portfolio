@@ -1,0 +1,132 @@
+:root {
+  
+  --dusky-blue: #a7b5dba7;
+  --salmon: #FAAFB7;
+  --dusky-rose: #DBA7A7;
+  --dark-green: #4d7865c7;
+  --lite-pink: #F5DFE8;
+  --taupe: #B5A5AB;
+  --lite-green: #85BB98;
+  --green-black: #2D382E;
+  --teal-black: #2E3C3D;
+}
+body {
+  width: 100vw;
+  font-family: "Advent Pro", sans-serif;
+  font-family: "Blaka Hollow", cursive;
+  font-family: "Inconsolata", monospace;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Radio Canada", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+  background-image: url(./images/pinkCactus.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-container {
+  margin: 0 auto;
+  width: 90%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* margin-top: 10px;
+  margin-bottom: 30px; */
+}
+h1 {
+  font-size: 10.66vw;
+  font-weight: bolder;
+  color: var(--green-black);
+}
+h2 {
+  font-size: 7.46vw;
+  color: var(--green-black);
+}
+
+li {
+  list-style: none;
+}
+a.nav-link {
+  color: var(--green-black);
+  font-size: 5.8vw;
+}
+a.nav-link:hover {
+  color: var(--green-black);
+text-shadow: 5px 5px 5px var(--salmon);
+transition: transform 0.5s ease;
+  transform: scale(1.5, 1.5);
+}
+
+/*start navbar menu  */
+/*start footer styling*/
+footer {
+
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-green);
+  color: var(--salmon);
+  /* margin-top: 40px; */
+  padding: 10px 0;
+  gap: 8px;
+  position:fixed;
+  bottom:0;
+  width:90%;
+  margin: 18px auto;
+  
+}
+
+.all-rights-reserved {
+  font-size: 4.6vw;
+  color: var(--lite-pink);
+  
+}
+/* START Style for "font awesome" social media icons */
+.fa {
+  padding: 12px;
+  font-size: 3vw;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid var(--lite-pink);
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55acee82;
+  color: var(--lite-pink);
+}
+
+.fa-facebook {
+  background: #3b58987d;
+  color: var(--lite-pink);
+}
+
+.fa-google {
+  background: #dc4e417b;
+  color: var(--lite-pink);
+}
+
+.fa-pinterest {
+  background: #bd081d7f;
+  color: var(--lite-pink);
+}
+.fa-instagram {
+  background: #3f729b7d;
+  color: var(--lite-pink);
+}
+.social_media_links {
+  display: flex;
+  gap: 5px;
+}
+/*end social media icons*/
+
+/*start media query for tablet*/
+
+/* @media (min-width: 576px) {
