@@ -60,9 +60,36 @@ text-shadow: 5px 5px 5px var(--salmon);
 transition: transform 0.5s ease;
   transform: scale(1.1, 1.1);
 }
+.modal-header {
+  background-image: url(../images/upcloseSalmon2.png) ;
+}
+#staticBackdropLabel {
+  font-size: 8vw;
+  font-weight: bold;
+}
+.modal-body {
+  background-image: url(../images/skyCloseUp.png);
+  color: var(--green-black);
+}
+.form-label {
+  font-size: 20px;
+}
+.form-control {
+  background-color: var(--lite-pink);
+}
+#typeText {
+  margin-bottom: 10px;
+  color: var(--green-black);
+
+}
 .submit-button {
   background-color: var(--taupe);
+  border: none;
 }
+.modal-footer {
+  background-image: url(../images/upcloseSalmon2.png) ;
+}
+
 ul.nav-menu {
   padding-left: 0px;
 }
