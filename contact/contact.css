@@ -45,20 +45,24 @@ h2 {
 margin-top: 10px;
 
 }
-.contact-form {
+.contact-form{
   font-size: 7.46vw;
   color: var(--green-black);
   font-weight: bold;
 margin-top: 10px;
 text-decoration: none;
+border: none;
+background-color: transparent;
 }
-a.contact-form:hover {
+.contact-form:hover {
   color: var(--green-black);
 text-shadow: 5px 5px 5px var(--salmon);
 transition: transform 0.5s ease;
-  transform: scale(1.5, 1.5);
+  transform: scale(1.1, 1.1);
 }
-
+.submit-button {
+  background-color: var(--taupe);
+}
 ul.nav-menu {
   padding-left: 0px;
 }
@@ -75,7 +79,7 @@ a.nav-link:hover {
   color: var(--green-black);
 text-shadow: 5px 5px 5px var(--salmon);
 transition: transform 0.5s ease;
-  transform: scale(1.5, 1.5);
+  transform: scale(1.1, 1.1);
 }
 
 /*start footer styling*/

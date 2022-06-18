@@ -34,10 +34,55 @@
         <h2>Location
         </h2>
         <p>based in Deland, Fl.</p>
-        <a class="contact-form" href="">Contact Form &rarr;
+        <!-- <button class="contact-form" href="">Contact Form &rarr;
 
-        </a>
+        </button> -->
         
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="contact-form text-start" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Contact Form &rarr;
+</button>
+
+<!-- Bootsrap Modal -->
+<form
+action="../results.html"
+method="get"
+enctype="multipart/form-data"
+id="contact_form"
+>
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Reach Out and Say Hi!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+            <label class="form-label" for="typeText">Name</label>
+            <input type="text" id="typeText" class="form-control" />
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" >
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary submit-button">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+<!-- end bootstrap modal -->
+
 
       </header>
         <nav class="navbar">
