@@ -1,0 +1,184 @@
+:root {
+  
+  --dusky-blue: #a7b5dba7;
+  --salmon: #FAAFB7;
+  --dusky-rose: #DBA7A7;
+  --dark-green: #4d7865c7;
+  --lite-pink: #F5DFE8;
+  --taupe: #B5A5AB;
+  --lite-green: #85BB98;
+  --green-black: #2D382E;
+  --teal-black: #2E3C3D;
+}
+body {
+  width: 100vw;
+  font-family: "Advent Pro", sans-serif;
+  font-family: "Blaka Hollow", cursive;
+  font-family: "Inconsolata", monospace;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Radio Canada", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+  background-image: url(/images/tallUpcloseSalmon3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-container {
+  margin: 0 auto;
+  width: 90%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+}
+h1 {
+  font-size: 10.66vw;
+  font-weight: bolder;
+  color: var(--green-black);
+}
+h2 {
+  font-size: 7.46vw;
+  color: var(--green-black);
+  font-weight: bold;
+margin-top: 10px;
+
+}
+.contact-form{
+  font-size: 7.46vw;
+  color: var(--green-black);
+  font-weight: bold;
+margin-top: 10px;
+text-decoration: none;
+border: none;
+background-color: transparent;
+}
+.contact-form:hover {
+  color: var(--green-black);
+text-shadow: 5px 5px 5px var(--salmon);
+transition: transform 0.5s ease;
+  transform: scale(1.1, 1.1);
+}
+.modal-header {
+  background-image: url(../images/upcloseSalmon2.png) ;
+}
+#staticBackdropLabel {
+  font-size: 8vw;
+  font-weight: bold;
+}
+.modal-body {
+  background-image: url(../images/skyCloseUp.png);
+  color: var(--green-black);
+}
+.form-label {
+  font-size: 20px;
+}
+.form-control {
+  background-color: var(--lite-pink);
+}
+#typeText {
+  margin-bottom: 10px;
+  color: var(--green-black);
+
+}
+.submit-button {
+  background-color: var(--taupe);
+  border: none;
+}
+.modal-footer {
+  background-image: url(../images/upcloseSalmon2.png) ;
+}
+
+ul.nav-menu {
+  padding-left: 0px;
+}
+li {
+  list-style: none;
+}
+a.nav-link {
+  color: var(--green-black);
+  font-size: 5vw;
+  padding-left: 0px;
+
+}
+a.nav-link:hover {
+  color: var(--green-black);
+text-shadow: 5px 5px 5px var(--salmon);
+transition: transform 0.5s ease;
+  transform: scale(1.1, 1.1);
+}
+
+/*start footer styling*/
+footer {
+
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: var(--dark-green); */
+  color: var(--salmon);
+  /* margin-top: 40px; */
+  padding: 10px 0;
+  gap: 8px;
+  position:fixed;
+  bottom:0;
+  width:90%;
+  margin: 18px auto;
+  
+}
+
+.all-rights-reserved {
+  border-top: 3px solid var(--taupe);
+  border-bottom: 3px solid var(--taupe);
+  font-size: 4vw;
+  color: var(--lite-pink);
+  background-color: var(--green-black); 
+
+}
+/* START Style for "font awesome" social media icons */
+.fa {
+  padding: 12px;
+  font-size: 3vw;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid var(--lite-pink);
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55acee82;
+  color: var(--lite-pink);
+}
+
+.fa-facebook {
+  background: #3b58987d;
+  color: var(--lite-pink);
+}
+
+.fa-google {
+  background: #dc4e417b;
+  color: var(--lite-pink);
+}
+
+.fa-pinterest {
+  background: #bd081d7f;
+  color: var(--lite-pink);
+}
+.fa-instagram {
+  background: #3f729b7d;
+  color: var(--lite-pink);
+}
+.social_media_links {
+  display: flex;
+  gap: 5px;
+}
+/*end social media icons*/
+
+/*start media query for tablet*/
+
+/* @media (min-width: 576px) {

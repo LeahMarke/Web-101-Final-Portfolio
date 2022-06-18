@@ -1,16 +1,14 @@
 :root {
-  --cadet-blue: Hex: #A4B6BF;
-  --bone: #E2D4C7;
-  --tumbleweed: #E8AF92;
-  --artichoke: #8B977C;
-  --nickel: #737373;
-  --toupe: #a69f88;
-  --light-grey: #DFD9CC;
-  --cream: #F9F9F0;
-  --sand: #eadac3;
-  --steel: #c4c2bd;
-  --peach: #cca993;
-  --brown: #998677;
+  
+  --dusky-blue: #a7b5dba7;
+  --salmon: #FAAFB7;
+  --dusky-rose: #DBA7A7;
+  --dark-green: #4d7865c7;
+  --lite-pink: #F5DFE8;
+  --taupe: #B5A5AB;
+  --lite-green: #85BB98;
+  --green-black: #2D382E;
+  --teal-black: #2E3C3D;
 }
 body {
   width: 100vw;
@@ -34,211 +32,63 @@ header {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 35px;
+  padding-top: 35px;
 }
 h1 {
-  font-size: 40px;
+  font-size: 10.66vw;
+  font-weight: bolder;
+  color: var(--green-black);
 }
-
-/* .navbar {
- min-height: 15%; 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-} */
-
+h2 {
+  font-size: 6vw;
+  color: var(--green-black);
+  padding-bottom: 35px;
+}
+ul.nav-menu {
+  padding-left: 0px;
+}
 li {
   list-style: none;
 }
 
-/*start hamburger menu  */
-/* .bar {
-  display: block;
-  width: 40px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: var(--nickel);
+a.nav-link {
+  color: var(--green-black);
+  font-size: 5vw;
+  padding-left: 0px;
+  
+  
 }
-.hamburger {
-  display: block;
-  margin-bottom: 20px;
-  padding: 4px;
+a.nav-link:hover {
+  color: var(--green-black);
+text-shadow: 5px 5px 5px var(--salmon);
+transition: transform 0.5s ease;
+  transform: scale(1.5, 1.5);
 }
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-} */
-/*end hamburger menu  */
-/*start navbar menu  */
-.nav-menu {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-}
-.nav-link {
-  color: var(--cadet-blue);
-  text-decoration: none;
-  padding: 5px;
-  font-size: 18px;
-}
+
 /*start footer styling*/
 footer {
-
-  height: 15%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(134, 132, 132, 0.712);
-  color: pink;
+text-align: center;
+  /* background-color: var(--dark-green); */
   /* margin-top: 40px; */
-  padding: 20px 0;
+  padding: 10px 0;
   gap: 8px;
   position:fixed;
   bottom:0;
   width:90%;
-  margin: 20px auto;
+  margin: 18px auto;
   
 }
 
 .all-rights-reserved {
-  font-size: 16px;
-  color: var(--cadet-blue);
-  
+  border-top: 1px solid var(--taupe);
+  border-bottom: 1px solid var(--taupe);
+  font-size: 4vw;
+  color: var(--lite-pink);
+  background-color: var(--green-black); 
 }
 /* START Style for "font awesome" social media icons */
-.fa {
-  padding: 10px;
-  font-size: 18px;
-  width: 45px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-twitter {
-  background: #55acee82;
-  color: white;
-}
-
-.fa-facebook {
-  background: #3b58987d;
-  color: white;
-}
-
-.fa-google {
-  background: #dc4e417b;
-  color: white;
-}
-
-.fa-pinterest {
-  background: #bd081d7f;
-  color: white;
-}
-.fa-instagram {
-  background: #3f729b7d;
-  color: white;
-}
-.social_media_links {
-  display: flex;
-  gap: 5px;
-}
 /*end social media icons*/
-/* @media (max-width: 575px) {
-  .nav-menu {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;
-    gap: 0;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-  }
-  .nav-item {
-    background-color: var(--tumbleweed);
-    border: 1px solid var(--bone);
-    width: 100%;
-    padding: 0.8em;
-  }
-  .nav-menu.active {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    align-items: stretch;
-    z-index: 1;
-  }
-  .active-link {
-    background: var(--nickel);
-  }
-  main {
-    z-index: -1;
-  }
-} */
+
 /*start media query for tablet*/
 
-@media (min-width: 576px) {
-  /* body {
-    height: 100vh;
-  } */
-  h1 {
-    padding: 20px;
-    font-size: 50px;
-  }
-
-  /* .hamburger {
-    display: none;
-    cursor: pointer;
-  } */
-
-  .navbar {
-    min-height: 70px;
-    display: flex;
-    padding: 0 24px;
-  }
-
-  .nav-link {
-    /* color: var(--wintergreen-dream); */
-    color: var(--bone);
-    text-decoration: none;
-  }
-  .nav-link:link {
-    color: var(--cadet-blue);
-    color: var(--bone);
-  }
-  .nav-link:hover {
-    font-weight: bolder;
-  }
-  .nav-link:active {
-    background-color: var(--nickel);
-  }
-  .nav-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-  }
-  .active-link {
-    font-weight: bolder;
-    background-color: var(--nickel);
-  }
-}
-@media (min-width: 992px) {
-  .nav-link {
-    font-size: 22px;
-  }
-}
+/* @media (min-width: 576px) {
