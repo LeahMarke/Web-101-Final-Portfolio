@@ -12,6 +12,7 @@
 }
 body {
   width: 100vw;
+  
   font-family: "Advent Pro", sans-serif;
   font-family: "Blaka Hollow", cursive;
   font-family: "Inconsolata", monospace;
@@ -20,7 +21,7 @@ body {
   font-family: "Nanum Gothic", sans-serif;
   font-family: "Radio Canada", sans-serif;
   font-family: "Titillium Web", sans-serif;
-  background-image: url(./images/cactusCloseUp.png);
+  background-image: url(../images/tallUpcloseSalmon3.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -28,39 +29,128 @@ body {
   margin: 0 auto;
   width: 90%;
 }
-header {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding-top: 35px;
-}
 h1 {
   font-size: 10.66vw;
   font-weight: bolder;
   color: var(--green-black);
-}
+  background-color: var(--lite-green);
+  padding: 1px 18px;
+  clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 49%, 0% 0%);}
 h2 {
   font-size: 6vw;
   color: var(--green-black);
-  padding-bottom: 15px;
+  padding-bottom: 9.33vw;
 }
 ul.nav-menu {
   padding-left: 0px;
+  padding-top: 9.33vw;
+
 }
 li {
   list-style: none;
+}
+/* start smooth scroll */
+/* html {
+  scroll-behavior: smooth;
+} */
+.responsive-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  border: 5px solid var(--lite-green);
+  clip-path: polygon(0 8%, 15% 8%, 15% 0%, 85% 0%, 85% 8%, 100% 8%, 100% 91%, 85% 91%, 85% 100%, 15% 100%, 15% 91%, 0 91%);}
+
+  .image-flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+/* #section1 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/cactusCloseUp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#section2 {
+  height: 100vh;
+  width: 100%;
+
+  background-image: url(../images/skyCloseUp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#section3 {
+  height: 100vh;
+  width: 100%;
+
+  background-image: url(../images/skyCloseUp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#section4 {
+  height: 100vh;
+  width: 100%;
+
+  background-image: url(../images/skyCloseUp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#section5 {
+  height: 100vh;
+  width: 100%;
+
+  background-image: url(../images/skyCloseUp.png);
+  background-repeat: no-repeat;
+  background-size: cover;} */
+
+  /* !!!!!!!!!!!!!START HERE LEAH!!!!!!!!!!! */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 a.nav-link {
   color: var(--green-black);
   font-size: 5vw;
   padding-left: 0px;
+  text-decoration: none;
   
   
 }
 a.nav-link:hover {
   color: var(--green-black);
-text-shadow: 5px 5px 5px var(--salmon);
+text-shadow: 1.33vw 1.33vw 1.33vw var(--salmon);
+transition: transform 0.5s ease;
+  transform: scale(1.5, 1.5);
+}
+
+/* end smooth scroll */
+a.arrow {
+  color: var(--green-black);
+  font-size: 15vw;
+  /* padding-left: 10px 10px; */
+  text-decoration: none;
+  background-color: var(--lite-pink);
+  padding-left: 12px ;
+  padding-right: 12px;
+  border: 3px solid var(--lite-green);
+  clip-path: polygon(0 8%, 15% 8%, 15% 0%, 85% 0%, 85% 8%, 100% 8%, 100% 91%, 85% 91%, 85% 100%, 15% 100%, 15% 91%, 0 91%);}
+  
+  
+
+a.arrow:hover {
+  color: var(--green-black);
+text-shadow: 1.33vw 1.33vw 1.33vw var(--salmon);
 transition: transform 0.5s ease;
   transform: scale(1.5, 1.5);
 }
@@ -70,18 +160,18 @@ footer {
 text-align: center;
   /* background-color: var(--dark-green); */
   /* margin-top: 40px; */
-  padding: 10px 0;
-  gap: 8px;
-  position:fixed;
+  padding: 2.66vw 0;
+  gap: 2.13vw;
+  /* position:fixed; */
   bottom:0;
   width:90%;
-  margin: 18px auto;
+  margin: 4.8vw auto;
   
 }
 
 .all-rights-reserved {
-  border-top: 3px solid var(--taupe);
-  border-bottom: 3px solid var(--taupe);
+  border-top: .26vw solid var(--taupe);
+  border-bottom: .26vw solid var(--taupe);
   font-size: 4vw;
   color: var(--lite-pink);
   background-color: var(--green-black); 

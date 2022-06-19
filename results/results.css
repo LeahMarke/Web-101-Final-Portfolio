@@ -76,8 +76,8 @@ footer {
 }
 
 .all-rights-reserved {
-  border-top: 0.8vw solid var(--taupe);
-  border-bottom: 0.8vw solid var(--taupe);
+  border-top: 0.26vw solid var(--taupe);
+  border-bottom: 0.26vw solid var(--taupe);
   font-size: 4vw;
   color: var(--lite-pink);
   background-color: var(--green-black);
