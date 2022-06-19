@@ -85,7 +85,9 @@ text-align: center;
   font-size: 4vw;
   color: var(--lite-pink);
   background-color: var(--green-black); 
-}
+  clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 49%, 0% 0%);}
+
+
 /* START Style for "font awesome" social media icons */
 /*end social media icons*/
 
