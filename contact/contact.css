@@ -31,7 +31,7 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  padding-top: 35px;
+  padding-top: 9.33vw;
 }
 h1 {
   font-size: 10.66vw;
@@ -42,21 +42,21 @@ h2 {
   font-size: 7.46vw;
   color: var(--green-black);
   font-weight: bold;
-margin-top: 10px;
+margin-top: 2.66vw;
 
 }
 .contact-form{
   font-size: 7.46vw;
   color: var(--green-black);
   font-weight: bold;
-margin-top: 10px;
+margin-top: 2.66vw;
 text-decoration: none;
 border: none;
 background-color: transparent;
 }
 .contact-form:hover {
   color: var(--green-black);
-text-shadow: 5px 5px 5px var(--salmon);
+text-shadow: 1.33vw 1.33vw 1.33vw  var(--salmon);
 transition: transform 0.5s ease;
   transform: scale(1.1, 1.1);
 }
@@ -72,13 +72,13 @@ transition: transform 0.5s ease;
   color: var(--green-black);
 }
 .form-label {
-  font-size: 20px;
+  font-size: 5.33vw;
 }
 .form-control {
   background-color: var(--lite-pink);
 }
 #typeText {
-  margin-bottom: 10px;
+  margin-bottom: 2.66vw;
   color: var(--green-black);
 
 }
@@ -91,7 +91,7 @@ transition: transform 0.5s ease;
 }
 
 ul.nav-menu {
-  padding-left: 0px;
+  padding-left: 0;
 }
 li {
   list-style: none;
@@ -99,12 +99,12 @@ li {
 a.nav-link {
   color: var(--green-black);
   font-size: 5vw;
-  padding-left: 0px;
+  padding-left: 0;
 
 }
 a.nav-link:hover {
   color: var(--green-black);
-text-shadow: 5px 5px 5px var(--salmon);
+text-shadow: 1.33vw 1.33vw 1.33vw  var(--salmon);
 transition: transform 0.5s ease;
   transform: scale(1.1, 1.1);
 }
@@ -119,18 +119,18 @@ footer {
   /* background-color: var(--dark-green); */
   color: var(--salmon);
   /* margin-top: 40px; */
-  padding: 10px 0;
-  gap: 8px;
+  padding: 2.66vw 0;
+  gap: 2.13vw;
   position:fixed;
   bottom:0;
   width:90%;
-  margin: 18px auto;
+  margin: 4.8vw auto;
   
 }
 
 .all-rights-reserved {
-  border-top: 3px solid var(--taupe);
-  border-bottom: 3px solid var(--taupe);
+  border-top: 0.8vw solid var(--taupe);
+  border-bottom: 0.8vw solid var(--taupe);
   font-size: 4vw;
   color: var(--lite-pink);
   background-color: var(--green-black); 
@@ -138,12 +138,12 @@ footer {
 }
 /* START Style for "font awesome" social media icons */
 .fa {
-  padding: 12px;
+  padding: 3.2vw;
   font-size: 3vw;
-  width: 45px;
+  width: 12vw;
   text-align: center;
   text-decoration: none;
-  border: 1px solid var(--lite-pink);
+  border: 0.26vw solid var(--lite-pink);
 }
 
 .fa:hover {
@@ -175,7 +175,7 @@ footer {
 }
 .social_media_links {
   display: flex;
-  gap: 5px;
+  gap: 1.33vw;
 }
 /*end social media icons*/
 

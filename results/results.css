@@ -1,0 +1,84 @@
+:root {
+  --dusky-blue: #a7b5dba7;
+  --salmon: #faafb7;
+  --dusky-rose: #dba7a7;
+  --dark-green: #4d7865c7;
+  --lite-pink: #f5dfe8;
+  --taupe: #b5a5ab;
+  --lite-green: #85bb98;
+  --green-black: #2d382e;
+  --teal-black: #2e3c3d;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Advent Pro", sans-serif;
+  font-family: "Blaka Hollow", cursive;
+  font-family: "Inconsolata", monospace;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Radio Canada", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+  background-image: url(/images/pinkCactus.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-container {
+  margin: 0 auto;
+  width: 90%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 9.33vw;
+}
+h1 {
+  font-size: 8vw;
+  font-weight: bolder;
+  color: var(--green-black);
+}
+#results {
+  font-size: 5vw;
+  color: var(--green-black);
+  font-weight: bold;
+  margin: 10.6vw 0;
+  line-height: 2;
+}
+a.go-back-button {
+  color: var(--green-black);
+  font-size: 5vw;
+  padding-left: 0;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--green-black);
+  text-shadow: 1.5vw 1.5vw 1.5vw var(--salmon);
+  transition: transform 0.5s ease;
+  transform: scale(1.5, 1.5);
+}
+
+/*start footer styling*/
+footer {
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: var(--dark-green); */
+  color: var(--salmon);
+  /* margin-top: 40px; */
+  padding: 2.66vw 0;
+  gap: 2.13vw;
+  position: fixed;
+  bottom: 0;
+  width: 90%;
+  margin: 4.8vw auto;
+}
+
+.all-rights-reserved {
+  border-top: 0.8vw solid var(--taupe);
+  border-bottom: 0.8vw solid var(--taupe);
+  font-size: 4vw;
+  color: var(--lite-pink);
+  background-color: var(--green-black);
+}
