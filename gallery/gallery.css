@@ -19,7 +19,7 @@ body {
   font-family: "Nanum Gothic", sans-serif;
   font-family: "Radio Canada", sans-serif;
   font-family: "Titillium Web", sans-serif;
-  background-image: url(./images/pinkCactus.jpg);
+  background-image: url(../images/pinkCactus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -63,8 +63,23 @@ a.nav-link:hover {
 }
 .thumbnail-images {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin-bottom: 40px;
   /* grid-template-rows: ; */
+}
+.thumbnail-images > a {
+  margin: 0 auto;
+}
+img.img-thumbnail.rounded {
+  border: 1px solid var(--lite-green);
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  margin-bottom: 10px;
+}
+img:hover {
+  box-shadow: 1.33vw 1.33vw 1.33vw var(--salmon);
 }
 /*start footer styling*/
 footer {
@@ -73,7 +88,7 @@ footer {
   /* margin-top: 40px; */
   padding: 2.66vw 0;
   gap: 2.13vw;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 90%;
   margin: 4.8vw auto;
@@ -86,4 +101,6 @@ footer {
   color: var(--lite-pink);
   background-color: var(--green-black);
   clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 49%, 0% 0%);
+}
+@media (min-width: 786px) {
 }
