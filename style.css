@@ -1,17 +1,18 @@
 :root {
-  
   --dusky-blue: #a7b5dba7;
-  --salmon: #FAAFB7;
-  --dusky-rose: #DBA7A7;
+  --salmon: #faafb7;
+  --dusky-rose: #dba7a7;
   --dark-green: #4d7865c7;
-  --lite-pink: #F5DFE8;
-  --taupe: #B5A5AB;
-  --lite-green: #85BB98;
-  --green-black: #2D382E;
-  --teal-black: #2E3C3D;
+  --lite-pink: #f5dfe8;
+  --taupe: #b5a5ab;
+  --lite-green: #85bb98;
+  --green-black: #2d382e;
+  --teal-black: #2e3c3d;
 }
 body {
   width: 100vw;
+  max-width: 964px;
+  height: 100vh;
   font-family: "Advent Pro", sans-serif;
   font-family: "Blaka Hollow", cursive;
   font-family: "Inconsolata", monospace;
@@ -27,22 +28,23 @@ body {
 .page-container {
   margin: 0 auto;
   width: 90%;
+  height: 90%;
 }
 header {
   display: flex;
   flex-direction: column;
-  gap: 8vw;
-  padding-top: 9.33vw;
+  gap: 2em;
+  padding-top: 1.5em;
 }
 h1 {
-  font-size: 10.66vw;
+  font-size: 2.2em;
   font-weight: bolder;
   color: var(--green-black);
 }
 h2 {
-  font-size: 6vw;
+  font-size: 1.5em;
   color: var(--green-black);
-  padding-bottom: 9.33vw;
+  padding-bottom: 1.4em;
 }
 ul.nav-menu {
   padding-left: 0px;
@@ -53,44 +55,29 @@ li {
 
 a.nav-link {
   color: var(--green-black);
-  font-size: 5vw;
+  font-size: 1.2em;
   padding-left: 0px;
-  
-  
 }
 a.nav-link:hover {
   color: var(--green-black);
-text-shadow: 1.33vw 1.33vw 1.33vw var(--salmon);
-transition: transform 0.5s ease;
+  text-shadow: 0.2em 0.2em 0.2em var(--salmon);
+  transition: transform 0.5s ease;
   transform: scale(1.5, 1.5);
 }
 
 /*start footer styling*/
 footer {
-text-align: center;
-  /* background-color: var(--dark-green); */
-  /* margin-top: 40px; */
-  padding: 2.66vw 0;
-  gap: 2.13vw;
-  position:fixed;
-  bottom:0;
-  width:90%;
-  margin: 4.8vw auto;
-  
+  text-align: center;
+  padding: 0.5em 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .all-rights-reserved {
-  border-top: .26vw solid var(--taupe);
-  border-bottom: .26vw solid var(--taupe);
-  font-size: 4vw;
+  border-top: 0.2em solid var(--taupe);
+  border-bottom: 0.2em solid var(--taupe);
+  font-size: 1em;
   color: var(--lite-pink);
-  background-color: var(--green-black); 
-  clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 49%, 0% 0%);}
-
-
-/* START Style for "font awesome" social media icons */
-/*end social media icons*/
-
-/*start media query for tablet*/
-
-/* @media (min-width: 576px) {
+  background-color: var(--green-black);
+  clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 49%, 0% 0%);
+}

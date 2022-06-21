@@ -29,21 +29,21 @@ body {
   width: 90%;
 }
 h1 {
-  font-size: 10.66vw;
+  font-size: 2.2em;
   font-weight: bolder;
   color: var(--green-black);
   background-color: var(--lite-green);
-  padding: 1px 18px;
+  padding: 0.2em 0.6em;
   clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 49%, 0% 0%);
 }
 h2 {
-  font-size: 6vw;
+  font-size: 1.5rem;
   color: var(--green-black);
-  padding-bottom: 9.33vw;
+  padding-bottom: 1.4em;
 }
 ul.nav-menu {
   padding-left: 0px;
-  padding-top: 9.33vw;
+  padding-top: 1em;
 }
 li {
   list-style: none;
@@ -52,9 +52,9 @@ li {
   width: 100%;
   max-width: 800px;
   height: auto;
-  margin-top: 10px;
-  margin-bottom: 25px;
-  border: 5px solid var(--lite-green);
+  margin-top: 1em;
+  margin-bottom: 1.8em;
+  border: 0.3em solid var(--lite-green);
   clip-path: polygon(
     0 8%,
     15% 8%,
@@ -82,22 +82,23 @@ ul.nav-menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 0.5em;
 }
 
 a.nav-link {
   color: var(--green-black);
-  font-size: 5vw;
+  font-size: 1.4em;
   padding-left: 0px;
   text-decoration: none;
 }
 a.nav-link:hover {
   color: var(--green-black);
-  text-shadow: 1.33vw 1.33vw 1.33vw var(--salmon);
+  text-shadow: 0.2em 0.2em 0.2em var(--salmon);
   transition: transform 0.5s ease;
   transform: scale(1.5, 1.5);
 }
 .text {
-  font-size: 5.33vw;
+  font-size: 1.4em;
   text-align: center;
   color: var(--green-black);
   background-color: var(--taupe);
@@ -105,20 +106,16 @@ a.nav-link:hover {
 /*start footer styling*/
 footer {
   text-align: center;
-  /* background-color: var(--dark-green); */
-  /* margin-top: 40px; */
-  padding: 2.66vw 0;
-  gap: 2.13vw;
-  /* position:fixed; */
-  bottom: 0;
-  width: 90%;
-  margin: 4.8vw auto;
+  padding: 0.5em 0;
+
+  width: 100%;
+  margin: 0 auto;
 }
 
 .all-rights-reserved {
-  border-top: 0.26vw solid var(--taupe);
-  border-bottom: 0.26vw solid var(--taupe);
-  font-size: 4vw;
+  border-top: 0.2em solid var(--taupe);
+  border-bottom: 0.2em solid var(--taupe);
+  font-size: 1em;
   color: var(--lite-pink);
   background-color: var(--green-black);
 }
