@@ -118,6 +118,7 @@ footer {
   font-size: 1em;
   color: var(--lite-pink);
   background-color: var(--green-black);
+  clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 49%, 0% 0%);
 }
 @media (min-width: 800px) {
   body {
