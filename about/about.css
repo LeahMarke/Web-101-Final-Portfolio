@@ -11,6 +11,7 @@
 }
 body {
   width: 100vw;
+  max-width: 800px;
 
   font-family: "Advent Pro", sans-serif;
   font-family: "Blaka Hollow", cursive;
@@ -118,4 +119,9 @@ footer {
   font-size: 1em;
   color: var(--lite-pink);
   background-color: var(--green-black);
+}
+@media (min-width: 800px) {
+  body {
+    background-size: 800px;
+  }
 }

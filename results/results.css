@@ -11,6 +11,8 @@
 }
 body {
   width: 100vw;
+  max-width: 800px;
+
   height: 100vh;
   font-family: "Advent Pro", sans-serif;
   font-family: "Blaka Hollow", cursive;
@@ -20,7 +22,7 @@ body {
   font-family: "Nanum Gothic", sans-serif;
   font-family: "Radio Canada", sans-serif;
   font-family: "Titillium Web", sans-serif;
-  background-image: url(/images/pinkCactus.jpg);
+  background-image: url(../images/pinkCactus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -81,4 +83,9 @@ footer {
   font-size: 4vw;
   color: var(--lite-pink);
   background-color: var(--green-black);
+}
+@media (min-width: 800px) {
+  body {
+    background-size: 800px;
+  }
 }

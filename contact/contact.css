@@ -12,6 +12,8 @@
 }
 body {
   width: 100vw;
+  max-width: 800px;
+
   font-family: "Advent Pro", sans-serif;
   font-family: "Blaka Hollow", cursive;
   font-family: "Inconsolata", monospace;
@@ -20,7 +22,7 @@ body {
   font-family: "Nanum Gothic", sans-serif;
   font-family: "Radio Canada", sans-serif;
   font-family: "Titillium Web", sans-serif;
-  background-image: url(/images/tallUpcloseSalmon3.png);
+  background-image: url(../images/tallUpcloseSalmon3.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -177,6 +179,12 @@ padding: 0vw 8vw;
   display: flex;
   gap: 1.33vw;
 }
+@media (min-width: 800px) {
+  body {
+    background-size: 800px;
+  }
+}
+
 /*end social media icons*/
 
 /*start media query for tablet*/
