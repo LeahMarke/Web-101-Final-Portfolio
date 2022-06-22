@@ -1,14 +1,13 @@
 :root {
-  
   --dusky-blue: #a7b5dba7;
-  --salmon: #FAAFB7;
-  --dusky-rose: #DBA7A7;
+  --salmon: #faafb7;
+  --dusky-rose: #dba7a7;
   --dark-green: #4d7865c7;
-  --lite-pink: #F5DFE8;
-  --taupe: #B5A5AB;
-  --lite-green: #85BB98;
-  --green-black: #2D382E;
-  --teal-black: #2E3C3D;
+  --lite-pink: #f5dfe8;
+  --taupe: #b5a5ab;
+  --lite-green: #85bb98;
+  --green-black: #2d382e;
+  --teal-black: #2e3c3d;
 }
 body {
   width: 100vw;
@@ -22,9 +21,10 @@ body {
   font-family: "Nanum Gothic", sans-serif;
   font-family: "Radio Canada", sans-serif;
   font-family: "Titillium Web", sans-serif;
-  background-image: url(../images/tallUpcloseSalmon3.png);
+  background-image: url(../images/pinkCactus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right top;
 }
 .page-container {
   margin: 0 auto;
@@ -33,40 +33,40 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  padding-top: 9.33vw;
+  padding-top: 2em;
 }
 h1 {
-  font-size: 10.66vw;
+  font-size: 3em;
   font-weight: bolder;
   color: var(--green-black);
 }
 h2 {
-  font-size: 7.46vw;
+  font-size: 2em;
   color: var(--green-black);
   font-weight: bold;
-margin-top: 2.66vw;
-
+  margin-top: 0.3em;
 }
-.contact-form{
-  font-size: 7.46vw;
+.contact-form {
+  font-size: 1.5em;
   color: var(--green-black);
   font-weight: bold;
-margin-top: 2.66vw;
-text-decoration: none;
-border: none;
-background-color: transparent;
+  padding-left: 0;
+  margin-top: 0.3em;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
 }
 .contact-form:hover {
   color: var(--green-black);
-text-shadow: 1.33vw 1.33vw 1.33vw  var(--salmon);
-transition: transform 0.5s ease;
+  text-shadow: 0.2em 0.2em 0.2em var(--salmon);
+  transition: transform 0.5s ease;
   transform: scale(1.1, 1.1);
 }
 .modal-header {
-  background-image: url(../images/upcloseSalmon2.png) ;
+  background-image: url(../images/upcloseSalmon2.png);
 }
 #staticBackdropLabel {
-  font-size: 8vw;
+  font-size: 2em;
   font-weight: bold;
 }
 .modal-body {
@@ -74,22 +74,25 @@ transition: transform 0.5s ease;
   color: var(--green-black);
 }
 .form-label {
-  font-size: 5.33vw;
+  font-size: 1.2em;
 }
 .form-control {
   background-color: var(--lite-pink);
 }
 #typeText {
-  margin-bottom: 2.66vw;
+  margin-bottom: 1.2em;
   color: var(--green-black);
-
 }
 .submit-button {
   background-color: var(--taupe);
   border: none;
+  color: var(--lite-pink);
+}
+.close-button {
+  color: var(--lite-pink);
 }
 .modal-footer {
-  background-image: url(../images/upcloseSalmon2.png) ;
+  background-image: url(../images/upcloseSalmon2.png);
 }
 
 ul.nav-menu {
@@ -100,52 +103,47 @@ li {
 }
 a.nav-link {
   color: var(--green-black);
-  font-size: 5vw;
+  font-size: 1.2em;
   padding-left: 0;
-
 }
 a.nav-link:hover {
   color: var(--green-black);
-text-shadow: 1.33vw 1.33vw 1.33vw  var(--salmon);
-transition: transform 0.5s ease;
+  text-shadow: 0.2em 0.2em 0.2em var(--salmon);
+  transition: transform 0.5s ease;
   transform: scale(1.1, 1.1);
 }
 
 /*start footer styling*/
 footer {
-
-  height: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: var(--dark-green); */
-  color: var(--salmon);
-  /* margin-top: 40px; */
-  padding: 2.66vw 0;
-  gap: 2.13vw;
-  position:fixed;
-  bottom:0;
-  width:90%;
-  margin: 4.8vw auto;
-  
+  padding: 0.5em 0;
+  gap: 0.5em;
+  width: 95%;
+  margin: auto auto;
+  margin-top: 4em;
 }
 
 .all-rights-reserved {
-  border-top: 0.26vw solid var(--taupe);
-  border-bottom: 0.26vw solid var(--taupe);
-  font-size: 4vw;
+  border-top: 0.2em solid var(--taupe);
+  border-bottom: 0.2em solid var(--taupe);
+  font-size: 0.9em;
   color: var(--lite-pink);
-  background-color: var(--green-black); 
-padding: 0vw 8vw;
+  background-color: var(--green-black);
+  padding-left: 2em;
+  padding-right: 2em;
+  clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 49%, 0% 0%);
 }
+
 /* START Style for "font awesome" social media icons */
 .fa {
-  padding: 3.2vw;
-  font-size: 3vw;
-  width: 12vw;
+  padding: 1em;
+  font-size: 0.8em;
+  width: 3.3em;
   text-align: center;
   text-decoration: none;
-  border: 0.26vw solid var(--lite-pink);
+  border: 0.1em solid var(--lite-pink);
 }
 
 .fa:hover {
@@ -153,40 +151,124 @@ padding: 0vw 8vw;
 }
 
 .fa-twitter {
-  background: #55acee82;
+  background: #55aceeba;
   color: var(--lite-pink);
 }
 
 .fa-facebook {
-  background: #3b58987d;
+  background: #3b5898bd;
   color: var(--lite-pink);
 }
 
 .fa-google {
-  background: #dc4e417b;
+  background: #dc4e41bd;
   color: var(--lite-pink);
 }
 
 .fa-pinterest {
-  background: #bd081d7f;
+  background: #bd081dbb;
   color: var(--lite-pink);
 }
 .fa-instagram {
-  background: #3f729b7d;
+  background: #3f729bb4;
   color: var(--lite-pink);
 }
 .social_media_links {
   display: flex;
-  gap: 1.33vw;
+  gap: 0.4em;
 }
-@media (min-width: 800px) {
-  body {
-    background-size: 800px;
+@media (min-width: 450px) {
+  footer {
+    margin-top: 8em;
+  }
+}
+@media (min-width: 500px) {
+  footer {
+    margin-top: 11em;
   }
 }
 
-/*end social media icons*/
+@media (min-width: 576px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  footer {
+    margin-top: 15em;
+  }
+  .all-rights-reserved {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+}
+@media (min-width: 630px) {
+  footer {
+    margin-top: 20em;
+  }
+}
 
-/*start media query for tablet*/
+@media (min-width: 690px) {
+  body {
+    background-size: 800px;
+  }
+  h1 {
+    font-size: 5em;
+  }
+  h2 {
+    font-size: 3.5em;
+  }
+  p {
+    font-size: 2.5em;
+  }
+  a.nav-link {
+    font-size: 2em;
+  }
 
-/* @media (min-width: 576px) {
+  footer {
+    margin-top: 15em;
+  }
+  .fa {
+    padding: 1em;
+    font-size: 1em;
+    width: 3.3em;
+    text-align: center;
+    text-decoration: none;
+    border: 0.1em solid var(--lite-pink);
+  }
+
+  .all-rights-reserved {
+    font-size: 1.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  .contact-form {
+    font-size: 2.5em;
+  }
+  #staticBackdropLabel {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  .form-label {
+    font-size: 2em;
+  }
+  #typeText {
+    margin-bottom: 1.2em;
+    color: var(--green-black);
+  }
+  .submit-button {
+    font-size: 1.5em;
+  }
+  .close-button {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 799px) {
+  body {
+    background-position: 0% 0%;
+  }
+}
