@@ -24,6 +24,7 @@ body {
   background-image: url(../images/pinkCactus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right top;
 }
 .page-container {
   margin: 0 auto;
@@ -176,6 +177,17 @@ footer {
   display: flex;
   gap: 0.4em;
 }
+@media (min-width: 450px) {
+  footer {
+    margin-top: 8em;
+  }
+}
+@media (min-width: 500px) {
+  footer {
+    margin-top: 11em;
+  }
+}
+
 @media (min-width: 576px) {
   h1 {
     font-size: 3em;
@@ -194,7 +206,13 @@ footer {
     padding-right: 6em;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 630px) {
+  footer {
+    margin-top: 20em;
+  }
+}
+
+@media (min-width: 690px) {
   body {
     background-size: 800px;
   }
@@ -225,8 +243,8 @@ footer {
 
   .all-rights-reserved {
     font-size: 1.5em;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
   }
   .contact-form {
     font-size: 2.5em;
@@ -247,5 +265,10 @@ footer {
   }
   .close-button {
     font-size: 1.5em;
+  }
+}
+@media (min-width: 799px) {
+  body {
+    background-position: 0% 0%;
   }
 }
