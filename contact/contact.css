@@ -85,6 +85,10 @@ h2 {
 .submit-button {
   background-color: var(--taupe);
   border: none;
+  color: var(--lite-pink);
+}
+.close-button {
+  color: var(--lite-pink);
 }
 .modal-footer {
   background-image: url(../images/upcloseSalmon2.png);
@@ -126,8 +130,11 @@ footer {
   font-size: 0.9em;
   color: var(--lite-pink);
   background-color: var(--green-black);
-  padding: 0 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 49%, 0% 0%);
 }
+
 /* START Style for "font awesome" social media icons */
 .fa {
   padding: 1em;
@@ -185,11 +192,60 @@ footer {
   .all-rights-reserved {
     padding-left: 6em;
     padding-right: 6em;
-    clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 49%, 0% 0%);
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   body {
     background-size: 800px;
+  }
+  h1 {
+    font-size: 5em;
+  }
+  h2 {
+    font-size: 3.5em;
+  }
+  p {
+    font-size: 2.5em;
+  }
+  a.nav-link {
+    font-size: 2em;
+  }
+
+  footer {
+    margin-top: 15em;
+  }
+  .fa {
+    padding: 1em;
+    font-size: 1em;
+    width: 3.3em;
+    text-align: center;
+    text-decoration: none;
+    border: 0.1em solid var(--lite-pink);
+  }
+
+  .all-rights-reserved {
+    font-size: 1.5em;
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .contact-form {
+    font-size: 2.5em;
+  }
+  #staticBackdropLabel {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  .form-label {
+    font-size: 2em;
+  }
+  #typeText {
+    margin-bottom: 1.2em;
+    color: var(--green-black);
+  }
+  .submit-button {
+    font-size: 1.5em;
+  }
+  .close-button {
+    font-size: 1.5em;
   }
 }
