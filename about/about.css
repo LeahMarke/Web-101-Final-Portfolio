@@ -11,7 +11,7 @@
 }
 body {
   width: 100vw;
-  max-width: 800px;
+  /* max-width: 1200px; */
 
   font-family: "Advent Pro", sans-serif;
   font-family: "Blaka Hollow", cursive;
@@ -32,10 +32,12 @@ body {
 h1 {
   font-size: 2.2em;
   font-weight: bolder;
-  color: var(--green-black);
-  background-color: var(--lite-green);
+  color: var(--lite-pink);
+  background-color: var(--dark-green);
   padding: 0.2em 0.6em;
   clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 49%, 0% 0%);
+  border-top: 0.2em solid var(--taupe);
+  border-bottom: 0.2em solid var(--taupe);
 }
 h2 {
   font-size: 1.5rem;
@@ -103,6 +105,7 @@ a.nav-link:hover {
   text-align: center;
   color: var(--green-black);
   background-color: var(--taupe);
+  padding: 0 1em;
 }
 /*start footer styling*/
 footer {
@@ -120,8 +123,8 @@ footer {
   background-color: var(--green-black);
   clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 49%, 0% 0%);
 }
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   body {
-    background-size: 800px;
+    background-size: 1200px;
   }
 }
