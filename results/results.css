@@ -11,9 +11,12 @@
 }
 body {
   width: 100vw;
-  max-width: 800px;
-
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   font-family: "Advent Pro", sans-serif;
   font-family: "Blaka Hollow", cursive;
   font-family: "Inconsolata", monospace;
@@ -22,70 +25,53 @@ body {
   font-family: "Nanum Gothic", sans-serif;
   font-family: "Radio Canada", sans-serif;
   font-family: "Titillium Web", sans-serif;
-  background-image: url(../images/pinkCactus.jpg);
+  background-image: url(../images/noPinkCactus.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100vw 100vh;
+  backdrop-filter: blur(5px);
+  background-position: right top;
 }
 .page-container {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
+  height: 90%;
+  max-width: 900px;
+  height: 100%;
+  padding: 20px;
+  background-image: url(../images/noPinkCactus.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  position: relative;
+  box-shadow: 20px 6px 10px 6px #0000001a;
 }
 header {
   display: flex;
   flex-direction: column;
-  padding-top: 9.33vw;
+  padding-top: 1.5em;
 }
 h1 {
-  font-size: 8vw;
+  font-size: 2em;
   font-weight: bolder;
   color: var(--green-black);
 }
 #results {
-  font-size: 5vw;
+  font-size: 1.8em;
   color: var(--green-black);
   font-weight: bold;
-  margin: 10.6vw 0;
+  margin: 2em 0;
   line-height: 2;
 }
 a.go-back-button {
   color: var(--green-black);
-  font-size: 5vw;
+  font-size: 1.4em;
   padding-left: 0;
   text-decoration: none;
+  font-weight: bold;
 }
 a:hover {
   color: var(--green-black);
-  text-shadow: 1.5vw 1.5vw 1.5vw var(--salmon);
+  text-shadow: 0.2em 0.2em 0.2em var(--salmon);
   transition: transform 0.5s ease;
   transform: scale(1.5, 1.5);
-}
-
-/*start footer styling*/
-footer {
-  height: 15%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* background-color: var(--dark-green); */
-  color: var(--salmon);
-  /* margin-top: 40px; */
-  padding: 2.66vw 0;
-  gap: 2.13vw;
-  position: fixed;
-  bottom: 0;
-  width: 90%;
-  margin: 4.8vw auto;
-}
-
-.all-rights-reserved {
-  border-top: 0.26vw solid var(--taupe);
-  border-bottom: 0.26vw solid var(--taupe);
-  font-size: 4vw;
-  color: var(--lite-pink);
-  background-color: var(--green-black);
-}
-@media (min-width: 800px) {
-  body {
-    background-size: 800px;
-  }
 }
