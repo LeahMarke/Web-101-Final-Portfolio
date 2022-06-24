@@ -51,14 +51,14 @@ header {
   padding-top: 1.5em;
 }
 h1 {
-  font-size: 2.2em;
+  font-size: 3em;
   font-weight: bolder;
   color: var(--green-black);
 }
 h2 {
   font-size: 1.5em;
   color: var(--green-black);
-  padding-bottom: 1.4em;
+  padding-bottom: 1em;
 }
 ul.nav-menu {
   padding-left: 0px;
@@ -99,30 +99,6 @@ footer {
   clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 49%, 0% 0%);
 }
 @media (min-width: 576px) {
-  h1 {
-    font-size: 4em;
-  }
-  h2 {
-    font-size: 2.2em;
-    padding-bottom: 1.4em;
-  }
-  ul.nav-menu {
-    padding-left: 0px;
-  }
-  a.nav-link {
-    font-size: 2em;
-    padding-left: 0px;
-  }
-  footer {
-    padding: 0.5em 0;
-    margin: 0 auto;
-  }
-
-  .all-rights-reserved {
-    font-size: 1.2em;
-  }
-}
-@media (min-width: 800px) {
   h1 {
     font-size: 4em;
   }

@@ -11,8 +11,6 @@
 }
 body {
   width: 100vw;
-  /* max-width: 1200px; */
-
   font-family: "Advent Pro", sans-serif;
   font-family: "Blaka Hollow", cursive;
   font-family: "Inconsolata", monospace;
@@ -90,7 +88,7 @@ ul.nav-menu {
 
 a.nav-link {
   color: var(--green-black);
-  font-size: 1.4em;
+  font-size: 1.2em;
   padding-left: 0px;
   text-decoration: none;
 }
@@ -122,4 +120,33 @@ footer {
   color: var(--lite-pink);
   background-color: var(--green-black);
   clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 49%, 0% 0%);
+}
+@media (min-width: 576px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.2em;
+    padding-bottom: 1.4em;
+  }
+  ul.nav-menu {
+    padding-left: 0px;
+  }
+  a.nav-link {
+    font-size: 2em;
+    padding-left: 0px;
+  }
+  footer {
+    padding: 0.5em 0;
+    margin: 0 auto;
+  }
+
+  .all-rights-reserved {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 800px) {
+  h1 {
+    font-size: 3.5em;
+  }
 }
