@@ -13,6 +13,10 @@ body {
   width: 100vw;
   /* max-width: 800px; */
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: "Advent Pro", sans-serif;
   font-family: "Blaka Hollow", cursive;
   font-family: "Inconsolata", monospace;
@@ -21,15 +25,25 @@ body {
   font-family: "Nanum Gothic", sans-serif;
   font-family: "Radio Canada", sans-serif;
   font-family: "Titillium Web", sans-serif;
-  background-image: url(./images/pinkCactus.jpg);
+  background-image: url(./images/noPinkCactus.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100vw 100vh;
+  backdrop-filter: blur(5px);
   background-position: right top;
 }
 .page-container {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   height: 90%;
+  max-width: 900px;
+  height: 100%;
+  padding: 20px;
+  background-image: url(./images/pinkCactus.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  position: relative;
+  box-shadow: 20px 6px 10px 6px #0000001a;
 }
 header {
   display: flex;
@@ -70,8 +84,11 @@ a.nav-link:hover {
 footer {
   text-align: center;
   padding: 0.5em 0;
-  width: 90%;
+  width: calc(100% - 40px);
   margin: 0 auto;
+  max-width: 900px;
+  position: absolute;
+  bottom: 20px;
 }
 
 .all-rights-reserved {
