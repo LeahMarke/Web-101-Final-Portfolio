@@ -126,9 +126,9 @@ footer {
   }
 } */
 @media (min-width: 576px) {
-  body {
-    /* height: 100vh; */
-  }
+  /* body {
+    
+  } */
   h1 {
     font-size: 4em;
   }
